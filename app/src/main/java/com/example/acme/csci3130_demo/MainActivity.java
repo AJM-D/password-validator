@@ -26,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void Copied(View v){
         String msg = Text_Field.getText().toString();
-        textAppear.setText(msg);
+        if(this.notPassword(msg)==true && this.atleastEight(msg)==true&&this.atleastNine(msg)==true&&this.atleastTen(msg)==true&&this.atleastEleven(msg)==true)
+        textAppear.setText("Strong!");
+        else
+            textAppear.setText("Not Strong!");
     }
     public boolean notPassword(String m){
         boolean nP = !m.equalsIgnoreCase("password");
