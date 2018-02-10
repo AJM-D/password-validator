@@ -36,4 +36,16 @@ public class MainActivity extends AppCompatActivity {
         boolean nP = m.toString().length()>7;
         return nP;
     }
+    public boolean atleastNine(String m){
+        boolean nP = m.toString().length()>8;
+        return nP;
+    }
+    public boolean atleastTen(String m){
+        boolean nP = m.toString().length()>9;
+        return nP;
+    }
+    public boolean atleastEleven(String m){
+        boolean nP = m.toString().length()>10;
+        return nP;
+    }
 }
