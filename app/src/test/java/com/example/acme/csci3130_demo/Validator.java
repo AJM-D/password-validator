@@ -29,5 +29,16 @@ public class Validator {
     public void atleastEight() throws Exception{
         assertTrue(ma.atleastEight("mantolino"));
     }
-
+    @Test
+    public void atleastNine() throws Exception{
+        assertTrue(ma.atleastNine("mantolino"));
+    }
+    @Test
+    public void atleastTen() throws Exception{
+        assertTrue(ma.atleastTen("mantolino1"));
+    }
+    @Test
+    public void atleastEleven() throws Exception{
+        assertTrue(ma.atleastEleven("mantolino11"));
+    }
 }
